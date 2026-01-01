@@ -1,85 +1,130 @@
+/* =========================================
+   1. COLOR PALETTE (Catppuccin)
+   ========================================= */
 :root {
-  /* Catppuccin Mocha Palette */
-  --ctp-rosewater: #f5e0dc;
-  --ctp-flamingo:  #f2cdcd;
-  --ctp-pink:      #f5c2e7;
-  --ctp-mauve:     #cba6f7;
-  --ctp-red:       #f38ba8;
-  --ctp-maroon:    #eba0ac;
-  --ctp-peach:     #fab387;
-  --ctp-yellow:    #f9e2af;
-  --ctp-green:     #a6e3a1;
-  --ctp-teal:      #94e2d5;
-  --ctp-sky:       #89dceb;
-  --ctp-sapphire:  #74c7ec;
-  --ctp-blue:      #89b4fa;
-  --ctp-lavender:  #b4befe;
-  --ctp-text:      #cdd6f4;
-  --ctp-subtext1:  #bac2de;
-  --ctp-subtext0:  #a6adc8;
-  --ctp-overlay2:  #9399b2;
-  --ctp-overlay1:  #7f849c;
-  --ctp-overlay0:  #6c7086;
-  --ctp-surface2:  #585b70;
-  --ctp-surface1:  #45475a;
-  --ctp-surface0:  #313244;
-  --ctp-base:      #1e1e2e;
-  --ctp-mantle:    #181825;
-  --ctp-crust:     #11111b;
+    /* --- LATTE (Light Mode) --- */
+    --latte-base:      #eff1f5;
+    --latte-mantle:    #e6e9ef;
+    --latte-text:      #4c4f69;
+    --latte-subtext:   #5c5f77;
+    --latte-mauve:     #8839ef; /* Primary */
+    --latte-blue:      #1e66f5; /* Links */
+    --latte-surface0:  #ccd0da; /* Borders */
+    --latte-card-bg:   #ffffff;
+
+    /* --- MOCHA (Dark Mode) --- */
+    --mocha-base:      #1e1e2e;
+    --mocha-mantle:    #181825;
+    --mocha-text:      #cdd6f4;
+    --mocha-subtext:   #a6adc8;
+    --mocha-mauve:     #cba6f7; /* Primary */
+    --mocha-blue:      #89b4fa; /* Links */
+    --mocha-surface0:  #313244; /* Borders */
+    --mocha-card-bg:   #232334; /* Slightly lighter than base */
 }
 
-/* Apply Mocha to Dark Mode (Slate) */
+/* =========================================
+   2. THEME APPLICATION
+   ========================================= */
+
+/* LIGHT MODE (Default) */
+[data-md-color-scheme="default"] {
+    --md-default-bg-color:     var(--latte-base);
+    --md-default-fg-color:     var(--latte-text);
+    --md-primary-fg-color:     var(--latte-mauve);
+    --md-accent-fg-color:      var(--latte-blue);
+    
+    --md-typeset-a-color:      var(--latte-blue);
+    --md-code-bg-color:        var(--latte-mantle);
+    
+    /* Custom vars for components */
+    --card-bg:                 var(--latte-card-bg);
+    --card-border:             rgba(0,0,0,0.05);
+    --shadow-sm:               0 2px 8px rgba(0,0,0,0.04);
+    --shadow-md:               0 8px 16px rgba(0,0,0,0.08);
+}
+
+/* DARK MODE (Slate) */
 [data-md-color-scheme="slate"] {
-  /* Backgrounds */
-  --md-default-bg-color:        var(--ctp-base);
-  --md-code-bg-color:           var(--ctp-mantle);
-  --md-footer-bg-color:         var(--ctp-mantle);
-  --md-footer-bg-color--dark:   var(--ctp-crust);
-  
-  /* Text */
-  --md-default-fg-color:        var(--ctp-text);
-  --md-default-fg-color--light: var(--ctp-subtext1);
-  --md-default-fg-color--lighter: var(--ctp-subtext0);
-  --md-default-fg-color--lightest: var(--ctp-overlay2);
-  
-  /* Brand Colors */
-  --md-primary-fg-color:        var(--ctp-mauve);
-  --md-primary-fg-color--light: var(--ctp-lavender);
-  --md-primary-fg-color--dark:  var(--ctp-mauve);
-  
-  --md-accent-fg-color:         var(--ctp-pink);
-  
-  /* UI Elements */
-  --md-typeset-a-color:         var(--ctp-blue);
-  --md-typeset-mark-color:      var(--ctp-surface1);
-  
-  /* Admonitions (Callouts) */
-  --md-admonition-bg-color:     var(--ctp-surface0);
+    --md-default-bg-color:     var(--mocha-base);
+    --md-default-fg-color:     var(--mocha-text);
+    --md-primary-fg-color:     var(--mocha-mauve);
+    --md-accent-fg-color:      var(--mocha-blue);
+    
+    --md-typeset-a-color:      var(--mocha-blue);
+    --md-code-bg-color:        var(--mocha-mantle);
+    
+    /* Custom vars for components */
+    --card-bg:                 var(--mocha-surface0);
+    --card-border:             rgba(255,255,255,0.05);
+    --shadow-sm:               0 2px 8px rgba(0,0,0,0.2);
+    --shadow-md:               0 8px 16px rgba(0,0,0,0.4);
 }
 
-/* Custom Grid Card Styling for Mocha */
+/* =========================================
+   3. TYPOGRAPHY & LAYOUT (Modernization)
+   ========================================= */
+
+body {
+    /* Increase base size for better readability (Google style) */
+    font-size: 17px; 
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Headers */
+h1, h2, h3 {
+    font-weight: 700;
+    letter-spacing: -0.02em; /* Tight tracking like Inter/Apple */
+    margin-bottom: 1rem;
+}
+
+h1 { font-size: 2.2em; color: var(--md-primary-fg-color); }
+h2 { margin-top: 2em; }
+
+/* Code Blocks */
+code {
+    font-family: "JetBrains Mono", monospace !important;
+    font-size: 0.9em;
+}
+
+/* =========================================
+   4. COMPONENT STYLING
+   ========================================= */
+
+/* Modern Grid Cards */
 .grid.cards > ul > li {
-  background-color: var(--ctp-surface0);
-  border: 1px solid var(--ctp-surface1);
-  color: var(--ctp-text);
-  transition: transform 0.2s, box-shadow 0.2s;
+    background-color: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px; /* Softer corners */
+    box-shadow: var(--shadow-sm);
+    transition: all 0.25s ease;
 }
 
 .grid.cards > ul > li:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-  border-color: var(--ctp-mauve);
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+    border-color: var(--md-primary-fg-color);
 }
 
-/* Button Styling */
+/* Buttons (Pill shape, modern) */
 .md-button {
-  background-color: var(--ctp-mauve);
-  color: var(--ctp-base);
-  font-weight: bold;
-  border: none;
+    border-radius: 50px;
+    padding: 0.6em 1.2em;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    transition: all 0.2s ease;
 }
 
 .md-button:hover {
-  background-color: var(--ctp-pink);
-  color: var(--ctp-base);
+    filter: brightness(110%);
+    transform: scale(1.02);
+}
+
+/* Admonitions (Callouts) - Cleaner Look */
+.md-typeset .admonition, 
+.md-typeset details {
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+    box-shadow: none;
 }
