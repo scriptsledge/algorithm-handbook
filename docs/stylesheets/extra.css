@@ -1,104 +1,155 @@
 /* =========================================
-   1. COLOR PALETTE (Catppuccin)
+   1. FONTS & IMPORTS
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+/* =========================================
+   2. COLOR PALETTE (Catppuccin Official)
    ========================================= */
 :root {
     /* --- LATTE (Light Mode) --- */
     --latte-base:      #eff1f5;
     --latte-mantle:    #e6e9ef;
     --latte-text:      #4c4f69;
-    --latte-subtext:   #5c5f77;
-    --latte-mauve:     #8839ef; /* Primary */
-    --latte-blue:      #1e66f5; /* Links */
-    --latte-surface0:  #ccd0da; /* Borders */
-    --latte-card-bg:   #ffffff;
+    --latte-mauve:     #8839ef;
+    --latte-blue:      #1e66f5;
+    --latte-card:      #ffffff;
 
-    /* --- MOCHA (Dark Mode) --- */
-    --mocha-base:      #1e1e2e;
-    --mocha-mantle:    #181825;
+    /* --- MOCHA (Dark Mode) - REFINED --- */
+    --mocha-base:      #1e1e2e; /* The main background */
+    --mocha-mantle:    #181825; /* Darker sidebars */
+    --mocha-surface0:  #313244; /* Cards (Lighter than base) */
     --mocha-text:      #cdd6f4;
-    --mocha-subtext:   #a6adc8;
-    --mocha-mauve:     #cba6f7; /* Primary */
-    --mocha-blue:      #89b4fa; /* Links */
-    --mocha-surface0:  #313244; /* Borders */
-    --mocha-card-bg:   #232334; /* Slightly lighter than base */
+    --mocha-mauve:     #cba6f7;
+    --mocha-blue:      #89b4fa;
 }
 
 /* =========================================
-   2. THEME APPLICATION
+   3. THEME CONFIGURATION
    ========================================= */
 
-/* LIGHT MODE (Default) */
+/* LIGHT MODE */
 [data-md-color-scheme="default"] {
     --md-default-bg-color:     var(--latte-base);
     --md-default-fg-color:     var(--latte-text);
     --md-primary-fg-color:     var(--latte-mauve);
     --md-accent-fg-color:      var(--latte-blue);
     
-    --md-typeset-a-color:      var(--latte-blue);
-    --md-code-bg-color:        var(--latte-mantle);
-    
-    /* Custom vars for components */
-    --card-bg:                 var(--latte-card-bg);
-    --card-border:             rgba(0,0,0,0.05);
+    /* Premium Glass Header */
+    --header-bg:               rgba(239, 241, 245, 0.75);
+    --header-border:           rgba(0,0,0,0.05);
+
+    /* Card Styling */
+    --card-bg:                 var(--latte-card);
+    --card-border:             rgba(0,0,0,0.06);
     --shadow-sm:               0 2px 8px rgba(0,0,0,0.04);
-    --shadow-md:               0 8px 16px rgba(0,0,0,0.08);
+    --shadow-md:               0 8px 24px rgba(0,0,0,0.08);
 }
 
-/* DARK MODE (Slate) */
+/* DARK MODE (Refined) */
 [data-md-color-scheme="slate"] {
     --md-default-bg-color:     var(--mocha-base);
     --md-default-fg-color:     var(--mocha-text);
     --md-primary-fg-color:     var(--mocha-mauve);
     --md-accent-fg-color:      var(--mocha-blue);
     
-    --md-typeset-a-color:      var(--mocha-blue);
     --md-code-bg-color:        var(--mocha-mantle);
     
-    /* Custom vars for components */
-    --card-bg:                 var(--mocha-surface0);
-    --card-border:             rgba(255,255,255,0.05);
-    --shadow-sm:               0 2px 8px rgba(0,0,0,0.2);
-    --shadow-md:               0 8px 16px rgba(0,0,0,0.4);
+    /* Premium Glass Header */
+    --header-bg:               rgba(30, 30, 46, 0.70);
+    --header-border:           rgba(255,255,255,0.05);
+
+    /* Card Styling (Matte Look) */
+    --card-bg:                 var(--mocha-surface0); 
+    --card-border:             rgba(255,255,255,0.06);
+    --shadow-sm:               0 2px 10px rgba(0,0,0,0.2);
+    --shadow-md:               0 10px 30px rgba(0,0,0,0.4);
 }
 
 /* =========================================
-   3. TYPOGRAPHY & LAYOUT (Modernization)
+   4. GLASS HEADER & LAYOUT
    ========================================= */
 
-body {
-    /* Increase base size for better readability (Google style) */
-    font-size: 17px; 
-    line-height: 1.7;
-    -webkit-font-smoothing: antialiased;
+/* The Glass Effect */
+.md-header {
+    background-color: var(--header-bg) !important;
+    backdrop-filter: blur(16px) saturate(140%);
+    -webkit-backdrop-filter: blur(16px) saturate(140%);
+    border-bottom: 1px solid var(--header-border);
+    color: var(--md-default-fg-color) !important;
+    box-shadow: none !important;
+    height: 3.5rem; /* Sleek height */
 }
 
-/* Headers */
-h1, h2, h3 {
-    font-weight: 700;
-    letter-spacing: -0.02em; /* Tight tracking like Inter/Apple */
+/* Search Input Blending */
+.md-search__input {
+    background-color: rgba(128, 128, 128, 0.1) !important;
+    border-radius: 8px;
+    height: 2.2rem;
+}
+
+/* Layout Width */
+.md-grid {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Sidebar Cleanliness */
+.md-sidebar {
+    width: 11rem;
+}
+.md-sidebar__scrollwrap {
+    scrollbar-width: none;
+}
+
+/* =========================================
+   5. TYPOGRAPHY
+   ========================================= */
+
+body, input, button {
+    font-family: 'Inter', sans-serif !important;
+    font-size: 16px;
+    line-height: 1.65;
+}
+
+h1 {
+    font-weight: 800;
+    font-size: 2.2rem;
+    background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     margin-bottom: 1rem;
 }
 
-h1 { font-size: 2.2em; color: var(--md-primary-fg-color); }
-h2 { margin-top: 2em; }
-
-/* Code Blocks */
 code {
-    font-family: "JetBrains Mono", monospace !important;
-    font-size: 0.9em;
+    font-family: 'JetBrains Mono', monospace !important;
+    font-size: 0.88em;
+    border-radius: 6px;
 }
 
 /* =========================================
-   4. COMPONENT STYLING
+   6. GRID CARDS (FIXED)
    ========================================= */
 
-/* Modern Grid Cards */
+.grid.cards > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    margin: 2rem 0;
+}
+
 .grid.cards > ul > li {
-    background-color: var(--card-bg);
+    background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 12px; /* Softer corners */
+    border-radius: 16px;
+    padding: 1.5rem;
     box-shadow: var(--shadow-sm);
-    transition: all 0.25s ease;
+    transition: transform 0.2s, box-shadow 0.2s;
+    
+    /* Layout Logic */
+    display: flex;
+    flex-direction: column;
 }
 
 .grid.cards > ul > li:hover {
@@ -107,24 +158,26 @@ code {
     border-color: var(--md-primary-fg-color);
 }
 
-/* Buttons (Pill shape, modern) */
-.md-button {
-    border-radius: 50px;
-    padding: 0.6em 1.2em;
+/* Content inside card */
+.grid.cards > ul > li > p {
     font-weight: 600;
-    letter-spacing: 0.01em;
-    transition: all 0.2s ease;
+    font-size: 1.05rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
-.md-button:hover {
-    filter: brightness(110%);
-    transform: scale(1.02);
+/* Icons */
+.twemoji {
+    color: var(--md-primary-fg-color);
 }
 
-/* Admonitions (Callouts) - Cleaner Look */
-.md-typeset .admonition, 
-.md-typeset details {
-    border-radius: 8px;
-    border: 1px solid var(--card-border);
-    box-shadow: none;
+/* Button Fix */
+.md-button {
+    margin-top: auto; /* Push to bottom */
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: 600;
 }
