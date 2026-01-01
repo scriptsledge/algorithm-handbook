@@ -9,16 +9,14 @@
 :root {
     /* --- LATTE (Light Mode) --- */
     --latte-base:      #eff1f5;
-    --latte-mantle:    #e6e9ef;
     --latte-text:      #4c4f69;
     --latte-mauve:     #8839ef;
     --latte-blue:      #1e66f5;
     --latte-card:      #ffffff;
 
-    /* --- MOCHA (Dark Mode) - REFINED --- */
-    --mocha-base:      #1e1e2e; /* The main background */
-    --mocha-mantle:    #181825; /* Darker sidebars */
-    --mocha-surface0:  #313244; /* Cards (Lighter than base) */
+    /* --- MOCHA (Dark Mode) --- */
+    --mocha-base:      #1e1e2e;
+    --mocha-surface:   #313244;
     --mocha-text:      #cdd6f4;
     --mocha-mauve:     #cba6f7;
     --mocha-blue:      #89b4fa;
@@ -35,149 +33,90 @@
     --md-primary-fg-color:     var(--latte-mauve);
     --md-accent-fg-color:      var(--latte-blue);
     
-    /* Premium Glass Header */
-    --header-bg:               rgba(239, 241, 245, 0.75);
-    --header-border:           rgba(0,0,0,0.05);
-
-    /* Card Styling */
+    --header-bg:               rgba(239, 241, 245, 0.85);
     --card-bg:                 var(--latte-card);
-    --card-border:             rgba(0,0,0,0.06);
-    --shadow-sm:               0 2px 8px rgba(0,0,0,0.04);
-    --shadow-md:               0 8px 24px rgba(0,0,0,0.08);
+    --card-border:             rgba(0,0,0,0.1);
 }
 
-/* DARK MODE (Refined) */
+/* DARK MODE */
 [data-md-color-scheme="slate"] {
     --md-default-bg-color:     var(--mocha-base);
     --md-default-fg-color:     var(--mocha-text);
     --md-primary-fg-color:     var(--mocha-mauve);
     --md-accent-fg-color:      var(--mocha-blue);
     
-    --md-code-bg-color:        var(--mocha-mantle);
-    
-    /* Premium Glass Header */
-    --header-bg:               rgba(30, 30, 46, 0.70);
-    --header-border:           rgba(255,255,255,0.05);
-
-    /* Card Styling (Matte Look) */
-    --card-bg:                 var(--mocha-surface0); 
-    --card-border:             rgba(255,255,255,0.06);
-    --shadow-sm:               0 2px 10px rgba(0,0,0,0.2);
-    --shadow-md:               0 10px 30px rgba(0,0,0,0.4);
+    --header-bg:               rgba(30, 30, 46, 0.85);
+    --card-bg:                 var(--mocha-surface);
+    --card-border:             rgba(255,255,255,0.1);
 }
 
 /* =========================================
-   4. GLASS HEADER & LAYOUT
+   4. LAYOUT FIXES (SAFE MODE)
    ========================================= */
 
-/* The Glass Effect */
+/* Glass Header - Simplified */
 .md-header {
     background-color: var(--header-bg) !important;
-    backdrop-filter: blur(16px) saturate(140%);
-    -webkit-backdrop-filter: blur(16px) saturate(140%);
-    border-bottom: 1px solid var(--header-border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--card-border);
     color: var(--md-default-fg-color) !important;
-    box-shadow: none !important;
-    height: 3.5rem; /* Sleek height */
 }
 
-/* Search Input Blending */
-.md-search__input {
-    background-color: rgba(128, 128, 128, 0.1) !important;
-    border-radius: 8px;
-    height: 2.2rem;
-}
-
-/* Layout Width */
-.md-grid {
-    max-width: 1280px;
-    margin: 0 auto;
-}
-
-/* Sidebar Cleanliness */
-.md-sidebar {
-    width: 11rem;
-}
-.md-sidebar__scrollwrap {
-    scrollbar-width: none;
-}
+/* Fonts */
+body, input { font-family: 'Inter', sans-serif !important; }
+code, pre { font-family: 'JetBrains Mono', monospace !important; }
 
 /* =========================================
-   5. TYPOGRAPHY
+   5. GRID CARDS (SPECIFIC TARGETING)
    ========================================= */
 
-body, input, button {
-    font-family: 'Inter', sans-serif !important;
-    font-size: 16px;
-    line-height: 1.65;
-}
-
-h1 {
-    font-weight: 800;
-    font-size: 2.2rem;
-    background: linear-gradient(135deg, var(--md-primary-fg-color), var(--md-accent-fg-color));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-bottom: 1rem;
-}
-
-code {
-    font-family: 'JetBrains Mono', monospace !important;
-    font-size: 0.88em;
-    border-radius: 6px;
-}
-
-/* =========================================
-   6. GRID CARDS (FIXED)
-   ========================================= */
-
+/* Only target the top-level list in the grid div */
 .grid.cards > ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 1.5rem;
+    gap: 1rem;
+    margin: 1.5rem 0;
     padding: 0;
-    margin: 2rem 0;
+    list-style: none;
 }
 
+/* The Card Itself */
 .grid.cards > ul > li {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 16px;
-    padding: 1.5rem;
-    box-shadow: var(--shadow-sm);
-    transition: transform 0.2s, box-shadow 0.2s;
+    border-radius: 12px;
+    padding: 1.25rem;
+    margin: 0; /* Reset margins */
     
-    /* Layout Logic */
+    /* Layout */
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
+/* Hover Effect */
 .grid.cards > ul > li:hover {
     transform: translateY(-4px);
-    box-shadow: var(--shadow-md);
     border-color: var(--md-primary-fg-color);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: all 0.2s ease;
 }
 
-/* Content inside card */
-.grid.cards > ul > li > p {
-    font-weight: 600;
-    font-size: 1.05rem;
+/* Title (First paragraph) */
+.grid.cards > ul > li > p:first-child {
+    font-weight: 700;
+    margin-top: 0;
     margin-bottom: 1rem;
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 8px;
 }
 
-/* Icons */
-.twemoji {
-    color: var(--md-primary-fg-color);
-}
-
-/* Button Fix */
-.md-button {
+/* Links/Buttons inside the card */
+.grid.cards > ul > li a.md-button {
     margin-top: auto; /* Push to bottom */
     width: 100%;
     text-align: center;
-    border-radius: 10px;
-    font-weight: 600;
+    border-radius: 8px;
 }
