@@ -42,3 +42,29 @@ Find the full source code and detailed article here:
 https://github.com/scriptsledge/algorithm-handbook/tree/main/src/2149
 
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #CodingLife #Programming #TechTips
+
+---
+
+## 💼 LinkedIn Post (Plain Text - Copy & Paste)
+
+How do you reorder data without breaking its history? 📉
+
+In data engineering, "Stability" means keeping items in their original relative order. Imagine sorting transaction logs: you want to separate "Credits" from "Debits", but you MUST keep them in chronological order.
+
+That is the core challenge of LeetCode 2149.
+
+🔹 The Goal:
+Alternate Positive and Negative numbers while strictly preserving their original sequence.
+
+🔹 The Solution:
+We use a "Two-Pointer" approach in a single pass (Linear Time).
+1. Pointer P: Tracks the next spot for a Positive number.
+2. Pointer N: Tracks the next spot for a Negative number.
+
+By pre-calculating the positions, we avoid expensive shifting operations. We sacrifice a bit of memory (Linear Space) to guarantee speed and stability.
+
+Check out the full breakdown and code in the Algorithm Handbook:
+👇
+https://scriptsledge.github.io/algorithm-handbook/problems/2149/
+
+#Algorithms #SystemsDesign #Cpp #DataStructures #Engineering

@@ -93,6 +93,29 @@ Find the full source code and detailed article here:
 https://github.com/scriptsledge/algorithm-handbook/tree/main/src/{number}
 
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #CodingLife #Programming #TechTips
+
+---
+
+## 💼 LinkedIn Post (Professional Tone)
+
+**Headline:** Stability in Array Processing: A Linear Time Approach 🚀
+
+Rearranging data is trivial. Preserving the **relative order** of elements while doing it? That's an engineering challenge.
+
+In today's LeetCode breakdown (**Problem {number}: {title}**), we explore how to alternate positive and negative integers in $O(N)$ time without disrupting their original sequence.
+
+**The Engineering Trade-off:**
+To maintain stability, we sacrifice $O(1)$ space for $O(N)$ space. In production systems, predictability often trumps raw memory optimization.
+
+**💡 Key Takeaways:**
+✅ Two-Pointer Technique
+✅ Stable Sorting Principles
+✅ Clean C++ Implementation
+
+**Read the full analysis in the Handbook:**
+👉 https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
+
+#SoftwareEngineering #DataStructures #Cpp #LeetCode #CareerGrowth #Tech
 """
 
 DOCS_TEMPLATE = """---
@@ -116,6 +139,17 @@ tags:
     [Solve It](https://leetcode.com/problems/TODO-SLUG/){{ .md-button }}
 
 </div>
+
+## 📝 Problem Description
+
+!!! info "Problem Statement"
+    <!-- Paste problem description here -->
+
+### Examples
+<!-- Paste examples here -->
+
+### Constraints
+<!-- Paste constraints here -->
 
 ## 🧠 Intuition
 
