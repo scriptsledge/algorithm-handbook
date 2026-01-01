@@ -1,0 +1,10 @@
+:root {
+  --md-primary-fg-color:        #cba6f7; /* Catppuccin Mocha Mauve */
+  --md-primary-fg-color--light: #cba6f7;
+  --md-primary-fg-color--dark:  #cba6f7;
+  --md-accent-fg-color:         #f5c2e7; /* Catppuccin Mocha Pink */
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 260;
+}

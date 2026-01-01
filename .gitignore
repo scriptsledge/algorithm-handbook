@@ -1,0 +1,26 @@
+# Prerequisites
+*.pyc
+*.pyo
+__pycache__/
+
+# MkDocs
+site/
+
+# C++ Build Artifacts
+*.exe
+*.out
+*.o
+*.obj
+solution
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Environment
+env/
+venv/
+.env
