@@ -62,15 +62,15 @@ METADATA_TEMPLATE = """# Video Metadata - Problem {number}
 **Description:**
 <!-- Add concise engineering description -->
 
-### 📊 Complexity Analysis
-*   **Time:** O(N)
-*   **Space:** O(N)
+*📊 Complexity Analysis*
+- Time: O(N)
+- Space: O(N)
 
-### 👇 Resources & Code
-📘 **Algorithm Handbook (Source Code):**
+*👇 Resources & Code*
+📘 Algorithm Handbook (Source Code):
 https://github.com/scriptsledge/algorithm-handbook/tree/main/src/{number}
 
-💡 **Detailed Article (LeetCode):**
+💡 Detailed Article (LeetCode):
 YOUR_LEETCODE_POST_LINK
 
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview
@@ -102,10 +102,10 @@ https://github.com/scriptsledge/algorithm-handbook/tree/main/src/{number}
 
 Rearranging data is trivial. Preserving the **relative order** of elements while doing it? That's an engineering challenge.
 
-In today's LeetCode breakdown (**Problem {number}: {title}**), we explore how to alternate positive and negative integers in $O(N)$ time without disrupting their original sequence.
+In today's LeetCode breakdown (**Problem {number}: {title}**), we explore how to alternate positive and negative integers in O(N) time without disrupting their original sequence.
 
 **The Engineering Trade-off:**
-To maintain stability, we sacrifice $O(1)$ space for $O(N)$ space. In production systems, predictability often trumps raw memory optimization.
+To maintain stability, we sacrifice O(1) space for O(N) space. In production systems, predictability often trumps raw memory optimization.
 
 **💡 Key Takeaways:**
 ✅ Two-Pointer Technique
