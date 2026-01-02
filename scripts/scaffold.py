@@ -190,6 +190,35 @@ tags:
     <!-- Explanation -->
 """
 
+README_TEMPLATE = """# {number}. {title}
+
+## Problem Description
+
+<!-- Paste problem description here -->
+
+### Examples
+
+<!-- Paste examples here -->
+
+### Constraints
+
+<!-- Paste constraints here -->
+
+## Solution
+
+The solution is implemented in the [`solution.cpp`](./solution.cpp) file.
+
+### Approach
+
+<!-- Add approach here -->
+
+### Code
+
+```cpp
+// Paste your solution class here
+```
+"""
+
 def create_problem(number, title):
     # 1. Create Directories
     prob_dir = os.path.join(SRC_DIR, number)
@@ -209,6 +238,9 @@ def create_problem(number, title):
 
     with open(os.path.join(prob_dir, "social_media.md"), "w") as f:
         f.write(METADATA_TEMPLATE.format(number=number, title=title))
+
+    with open(os.path.join(prob_dir, "readme.md"), "w") as f:
+        f.write(README_TEMPLATE.format(number=number, title=title))
         
     print(f"✅ Created templates in src/{number}/")
 
