@@ -71,4 +71,5 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '2874. Maximum Value of an Ordered Triplet II': problems/2874.md
       - '2149. Rearrange Array Elements': problems/2149.md

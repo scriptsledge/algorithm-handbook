@@ -27,7 +27,10 @@ int main() {
 }
 """
 
-SUBMISSION_TEMPLATE = """# 🚀 Intuition
+SUBMISSION_TEMPLATE = """# 🏷️ LeetCode Submission Title
+<!-- C++ | O(N) Solution | Prefix & Suffix Arrays | Clean Code -->
+
+# 🚀 Intuition
 <!-- Describe your first thoughts here -->
 
 # 💡 Approach
@@ -50,12 +53,11 @@ SUBMISSION_TEMPLATE = """# 🚀 Intuition
 ---
 **Connect & Follow:**
 *   📘 **Algorithm Handbook:** [Source Code & Docs](https://github.com/scriptsledge/algorithm-handbook/tree/main/src/{number})
-*   💡 **LeetCode Solution:** [View on LeetCode](YOUR_LEETCODE_POST_LINK)
 """
 
 METADATA_TEMPLATE = """# Video Metadata - Problem {number}
 
-## 📺 YouTube (Markdown Supported)
+## 📺 YouTube (Markdown Supported: Bold, Italic, Links)
 
 **Title:** LeetCode {number}: {title} | C++ Solution
 
@@ -77,7 +79,7 @@ YOUR_LEETCODE_POST_LINK
 
 ---
 
-## 📸 Meta (Facebook/Instagram - Plain Text)
+## 📸 Meta (Facebook/Instagram - Plain Text Only)
 
 **Caption:**
 LeetCode {number}: {title} | C++ Solution 🚀
@@ -92,30 +94,42 @@ LeetCode {number}: {title} | C++ Solution 🚀
 Find the full source code and detailed article here:
 https://github.com/scriptsledge/algorithm-handbook/tree/main/src/{number}
 
+## 📊 Engagement Poll
+
+**Prompt:** To break the O(N³) bottleneck while preserving relative order, what was your strategy?
+- **Option 1:** Precomputation (Prefix/Suffix) 🧠
+- **Option 2:** Greedy Traversal (One Pass) ⚡
+- **Option 3:** Brute Force (Correctness Check) 🐢
+- **Option 4:** Analyzing the Solution 📚
+
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #CodingLife #Programming #TechTips
 
 ---
 
-## 💼 LinkedIn Post (Professional Tone)
+## 💼 LinkedIn Post (Plain Text Only - No Markdown)
 
-**Headline:** Stability in Array Processing: A Linear Time Approach 🚀
+{hook_question} 📉
 
-Rearranging data is trivial. Preserving the **relative order** of elements while doing it? That's an engineering challenge.
+{engineering_context}
 
-In today's LeetCode breakdown (**Problem {number}: {title}**), we explore how to alternate positive and negative integers in O(N) time without disrupting their original sequence.
+That is the core challenge of LeetCode {number}.
 
-**The Engineering Trade-off:**
-To maintain stability, we sacrifice O(1) space for O(N) space. In production systems, predictability often trumps raw memory optimization.
+🔹 The Goal:
+{one_sentence_goal}
 
-**💡 Key Takeaways:**
-✅ Two-Pointer Technique
-✅ Stable Sorting Principles
-✅ Clean C++ Implementation
+🔹 The Solution:
+We use a "{technique_name}" approach to solve this in {time_complexity}.
 
-**Read the full analysis in the Handbook:**
-👉 https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
+1. Step 1: {step_1_description}
+2. Step 2: {step_2_description}
 
-#SoftwareEngineering #DataStructures #Cpp #LeetCode #CareerGrowth #Tech
+{trade_off_explanation}
+
+Check out the full breakdown and code in the Algorithm Handbook:
+👇
+https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
+
+#Algorithms #SystemsDesign #Cpp #DataStructures #Engineering
 """
 
 DOCS_TEMPLATE = """---

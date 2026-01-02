@@ -1,6 +1,6 @@
 # Video Metadata - Problem 2874
 
-## 📺 YouTube (Markdown Supported)
+## 📺 YouTube (Markdown Supported: Bold, Italic, Links)
 
 **Title:** LeetCode 2874: Maximum Value of an Ordered Triplet II | C++ Prefix/Suffix Array Solution
 
@@ -22,7 +22,7 @@ https://leetcode.com/problems/maximum-value-of-an-ordered-triplet-ii/solutions/7
 
 ---
 
-## 📸 Meta (Facebook/Instagram - Plain Text)
+## 📸 Meta (Facebook/Instagram - Plain Text Only)
 
 **Caption:**
 LeetCode 2874: Maximum Value of an Ordered Triplet II | C++ Solution 🚀
@@ -39,29 +39,39 @@ By precomputing the maximum values to the left (Prefix Max) and right (Suffix Ma
 Find the full source code and detailed article here:
 https://github.com/scriptsledge/algorithm-handbook/tree/main/src/2874
 
+## 📊 Engagement Poll
+
+**Prompt:** To break the O(N³) bottleneck while preserving relative order, what was your strategy?
+- **Option 1:** Precomputation (Prefix/Suffix) 🧠
+- **Option 2:** Greedy Traversal (One Pass) ⚡
+- **Option 3:** Brute Force (Correctness Check) 🐢
+- **Option 4:** Analyzing the Solution 📚
+
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #CodingLife #Programming #TechTips
 
 ---
 
-## 💼 LinkedIn Post (Professional Tone)
+## 💼 LinkedIn Post (Plain Text Only - No Markdown)
 
-**Headline:** Optimizing Array Queries with Prefix & Suffix Precomputation 🚀
+How do you find the optimal sequence without checking every possibility? 📉
 
-In data processing, we often need to find relationships between elements while preserving their original sequence. Today's LeetCode problem (**2874: Maximum Value of an Ordered Triplet II**) is a classic example where a naive check is too slow ($O(N^3)$), but a structured approach is instant ($O(N)$).
+In high-frequency trading or signal processing, finding patterns across a timeline is critical. But checking every combination of three points (i, j, k) leads to an O(N³) bottleneck—unacceptable for large datasets.
 
-**The Engineering Strategy:**
-Instead of searching for `i` and `k` for every `j` repeatedly, we pre-calculate the necessary state:
-1.  **Prefix Max Array:** Stores the best candidate for `nums[i]` seen so far.
-2.  **Suffix Max Array:** Stores the best candidate for `nums[k]` remaining in the array.
+That is the core challenge of LeetCode 2874.
 
-This transforms a cubic complexity problem into a linear one by trading a small amount of memory for significant speed gains.
+🔹 The Goal:
+Maximize the value of a triplet (nums[i] - nums[j]) * nums[k] while strictly maintaining the order i < j < k.
 
-**💡 Key Takeaways:**
-✅ Space-Time Tradeoffs
-✅ Prefix/Suffix Arrays
-✅ Clean C++ Implementation
+🔹 The Solution:
+We use "Prefix and Suffix Precomputation" to solve this in a single pass (Linear Time).
 
-**Read the full analysis in the Handbook:**
-👉 https://scriptsledge.github.io/algorithm-handbook/problems/2874/
+1. Prefix Max: At any point 'j', we instantly know the largest value that appeared *before* it.
+2. Suffix Max: We simultaneously know the largest value that will appear *after* it.
 
-#SoftwareEngineering #DataStructures #Cpp #LeetCode #CareerGrowth #Tech
+By pre-calculating these states, we transform a cubic complexity problem into a simple linear scan. We trade O(N) space for a massive O(N²) speedup.
+
+Check out the full breakdown and code in the Algorithm Handbook:
+👇
+https://scriptsledge.github.io/algorithm-handbook/problems/2874/
+
+#Algorithms #SystemsDesign #Cpp #DataStructures #Engineering
