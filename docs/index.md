@@ -13,10 +13,10 @@ This handbook serves as a living repository of algorithmic patterns, designed fo
 
 | Problem | Difficulty | Tags |
 | :--- | :---: | :--- |
+| [**0704. Binary Search**](problems/0704.md) | Easy | `Binary Search` `Recursion` |
 | [**0152. Maximum Product Subarray**](problems/0152.md) | Medium | `New` |
 | [**3375. Minimum Operations to Make Array Values Equal to K**](problems/3375.md) | Easy | `Array` `Hash Table` |
 | [**0001. Two Sum**](problems/0001.md) | Easy | `Array` `Hash Table` |
 | [**0268. Missing Number**](problems/0268.md) | Easy | `Math` `Bit Manipulation` |
-| [**0088. Merge Sorted Array**](problems/0088.md) | Easy | `Two Pointers` `Sorting` |
 
 *...view all problems in the navigation menu.*

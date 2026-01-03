@@ -284,26 +284,42 @@ def update_index_latest(number, title):
     with open(INDEX_FILE, "r") as f:
         lines = f.readlines()
     
-    insert_idx = -1
+    # Find the table start
+    table_start_idx = -1
     for i, line in enumerate(lines):
-        if "## 📚 Latest Additions" in line:
-            insert_idx = i + 2
+        if "| Problem | Difficulty | Tags |" in line:
+            table_start_idx = i
             break
     
-    if insert_idx != -1:
-        new_entry = f"*   [{number}. {title}](problems/{number}.md)\n"
-        # Check if already exists to avoid duplicates
-        if any(f"problems/{number}.md" in l for l in lines):
-             print(f"ℹ️ Problem {number} already in index.md")
-             return
-
-        lines.insert(insert_idx, new_entry)
+    if table_start_idx != -1:
+        # Construct new row
+        new_row = f"| [**{number}. {title}**](problems/{number}.md) | Medium | `New` |\n"
         
+        # Insert after the header and separator (index + 2)
+        insert_pos = table_start_idx + 2
+        lines.insert(insert_pos, new_row)
+        
+        # Limit to top 5 (header + separator + 5 rows = 7 lines total for the table part)
+        # We need to scan subsequent lines to see where the table ends or if we have > 5 rows
+        # Simplest way: Check the next 6 lines. If they are all table rows, delete the 6th one.
+        
+        # Let's count existing rows
+        current_rows = 0
+        scan_idx = insert_pos
+        while scan_idx < len(lines) and lines[scan_idx].strip().startswith("|"):
+            current_rows += 1
+            scan_idx += 1
+            
+        # If we have more than 5 rows, delete the extra ones from the bottom
+        if current_rows > 5:
+            # Delete lines from (insert_pos + 5) up to scan_idx
+            del lines[insert_pos + 5 : scan_idx]
+
         with open(INDEX_FILE, "w") as f:
             f.writelines(lines)
-        print(f"✅ Added to index.md latest additions")
+        print(f"✅ Added to index.md table (Top 5)")
     else:
-        print("⚠️ Warning: Could not find '## 📚 Latest Additions' section in index.md")
+        print("⚠️ Warning: Could not find Table Header in index.md. Please verify the format.")
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:
