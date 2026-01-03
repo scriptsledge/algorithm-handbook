@@ -71,6 +71,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '0088. Merge Sorted Array': problems/0088.md
       - '0056. Merge Intervals': problems/0056.md
       - '0053. Maximum Subarray': problems/0053.md
       - '2874. Maximum Value of an Ordered Triplet II': problems/2874.md
