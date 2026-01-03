@@ -11,6 +11,7 @@ This handbook serves as a living repository of algorithmic patterns, designed fo
 
 ## 📚 Latest Additions
 
+*   [3375. Minimum Operations to Make Array Values Equal to K](problems/3375.md)
 *   [0001. Two Sum](problems/0001.md)
 *   [0268. Missing Number](problems/0268.md)
 *   [0088. Merge Sorted Array](problems/0088.md)
