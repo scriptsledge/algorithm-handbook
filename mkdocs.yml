@@ -27,6 +27,10 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.top
+    - navigation.tracking
+    - navigation.instant
+    - header.autohide
+    - toc.follow
     - search.suggest
     - search.highlight
     - content.code.copy

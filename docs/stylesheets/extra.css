@@ -76,6 +76,7 @@
     border-bottom: 1px solid var(--header-border);
     color: var(--md-default-fg-color) !important;
     box-shadow: none !important;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
 }
 
 /* Navigation Tabs & Sidebar Background Fix */
@@ -97,14 +98,71 @@
     font-weight: 700;
 }
 
-/* Search Box */
+/* =========================================
+   5. MODERN SEARCH BOX
+   ========================================= */
 .md-search__input {
-    background-color: rgba(128, 128, 128, 0.08) !important;
-    border-radius: 12px;
+    background-color: rgba(128, 128, 128, 0.1) !important;
+    border-radius: 50px !important; /* Fully rounded pills */
+    border: 1px solid transparent;
+    padding-left: 45px !important;
+    transition: all 0.2s ease;
+    height: 40px !important;
+}
+
+.md-search__input:focus {
+    background-color: var(--md-default-bg-color) !important;
+    border-color: var(--md-primary-fg-color);
+    box-shadow: 0 0 0 4px rgba(var(--md-primary-fg-color), 0.1);
+}
+
+.md-search__icon {
+    color: var(--md-default-fg-color) !important;
+    opacity: 0.7;
 }
 
 /* =========================================
-   5. TYPOGRAPHY
+   6. "BACK TO TOP" BUTTON (Circular & Minimal)
+   ========================================= */
+.md-top {
+    color: var(--md-default-bg-color);
+    background-color: var(--md-primary-fg-color) !important;
+    border-radius: 50% !important; /* Circular */
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), opacity 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8; /* Non-distracting default */
+}
+
+.md-top svg {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+.md-top:hover {
+    opacity: 1;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(var(--md-primary-fg-color), 0.4);
+}
+
+/* Mobile Adjustments for Top Button */
+@media screen and (max-width: 76.1875em) {
+    .md-top {
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+
+/* =========================================
+   7. TYPOGRAPHY
    ========================================= */
 
 body, input, button {
@@ -122,7 +180,7 @@ h1 {
 }
 
 /* =========================================
-   6. COMPACT GLASS CARDS
+   8. COMPACT GLASS CARDS (Problems)
    ========================================= */
 
 .grid.cards > ul {
