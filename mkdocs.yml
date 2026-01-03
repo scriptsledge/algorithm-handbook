@@ -71,6 +71,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '0001. Two Sum': problems/0001.md
       - '0268. Missing Number': problems/0268.md
       - '0088. Merge Sorted Array': problems/0088.md
       - '0056. Merge Intervals': problems/0056.md
