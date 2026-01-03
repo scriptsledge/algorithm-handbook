@@ -52,7 +52,7 @@ SUBMISSION_TEMPLATE = """# 🏷️ LeetCode Submission Title
 
 ---
 **Connect & Follow:**
-*   📘 **Algorithm Handbook:** [Source Code & Docs](https://github.com/scriptsledge/algorithm-handbook/tree/main/src/{number})
+*   📘 **Algorithm Handbook:** [Full Analysis & Code](https://scriptsledge.github.io/algorithm-handbook/problems/{number}/)
 """
 
 METADATA_TEMPLATE = """# Video Metadata - Problem {number}
@@ -69,8 +69,8 @@ METADATA_TEMPLATE = """# Video Metadata - Problem {number}
 - Space: O(N)
 
 *👇 Resources & Code*
-📘 Algorithm Handbook (Source Code):
-https://github.com/scriptsledge/algorithm-handbook/tree/main/src/{number}
+📘 Algorithm Handbook (Full Breakdown):
+https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
 
 💡 Detailed Article (LeetCode):
 YOUR_LEETCODE_POST_LINK
@@ -108,22 +108,22 @@ https://github.com/scriptsledge/algorithm-handbook/tree/main/src/{number}
 
 ## 💼 LinkedIn Post (Plain Text Only - No Markdown)
 
-{hook_question} 📉
+{{hook_question}} 📉
 
-{engineering_context}
+{{engineering_context}}
 
 That is the core challenge of LeetCode {number}.
 
 🔹 The Goal:
-{one_sentence_goal}
+{{one_sentence_goal}}
 
 🔹 The Solution:
-We use a "{technique_name}" approach to solve this in {time_complexity}.
+We use a "{{technique_name}}" approach to solve this in {{time_complexity}}.
 
-1. Step 1: {step_1_description}
-2. Step 2: {step_2_description}
+1. Step 1: {{step_1_description}}
+2. Step 2: {{step_2_description}}
 
-{trade_off_explanation}
+{{trade_off_explanation}}
 
 Check out the full breakdown and code in the Algorithm Handbook:
 👇
