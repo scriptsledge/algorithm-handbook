@@ -7,6 +7,7 @@ ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SRC_DIR = os.path.join(ROOT_DIR, 'src')
 DOCS_DIR = os.path.join(ROOT_DIR, 'docs', 'problems')
 MKDOCS_FILE = os.path.join(ROOT_DIR, 'mkdocs.yml')
+INDEX_FILE = os.path.join(ROOT_DIR, 'docs', 'index.md')
 
 # Templates
 CPP_TEMPLATE = """#include <iostream>
@@ -255,6 +256,9 @@ def create_problem(number, title):
     # 4. Update mkdocs.yml
     update_mkdocs_nav(number, title)
 
+    # 5. Update index.md (Latest Additions)
+    update_index_latest(number, title)
+
 def update_mkdocs_nav(number, title):
     with open(MKDOCS_FILE, "r") as f:
         lines = f.readlines()
@@ -275,6 +279,31 @@ def update_mkdocs_nav(number, title):
         print(f"✅ Added to mkdocs.yml navigation")
     else:
         print("⚠️ Warning: Could not find '- Problems:' section in mkdocs.yml")
+
+def update_index_latest(number, title):
+    with open(INDEX_FILE, "r") as f:
+        lines = f.readlines()
+    
+    insert_idx = -1
+    for i, line in enumerate(lines):
+        if "## 📚 Latest Additions" in line:
+            insert_idx = i + 2
+            break
+    
+    if insert_idx != -1:
+        new_entry = f"*   [{number}. {title}](problems/{number}.md)\n"
+        # Check if already exists to avoid duplicates
+        if any(f"problems/{number}.md" in l for l in lines):
+             print(f"ℹ️ Problem {number} already in index.md")
+             return
+
+        lines.insert(insert_idx, new_entry)
+        
+        with open(INDEX_FILE, "w") as f:
+            f.writelines(lines)
+        print(f"✅ Added to index.md latest additions")
+    else:
+        print("⚠️ Warning: Could not find '## 📚 Latest Additions' section in index.md")
 
 if __name__ == "__main__":
     if len(sys.argv) < 3:

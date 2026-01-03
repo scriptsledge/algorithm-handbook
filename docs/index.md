@@ -11,4 +11,10 @@ This handbook serves as a living repository of algorithmic patterns, designed fo
 
 ## 📚 Latest Additions
 
+*   [0001. Two Sum](problems/0001.md)
+*   [0268. Missing Number](problems/0268.md)
+*   [0088. Merge Sorted Array](problems/0088.md)
+*   [0056. Merge Intervals](problems/0056.md)
+*   [0053. Maximum Subarray](problems/0053.md)
+*   [2874. Maximum Value of an Ordered Triplet II](problems/2874.md)
 *   [2149. Rearrange Array Elements by Sign](problems/2149.md)
