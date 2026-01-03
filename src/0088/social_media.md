@@ -1,17 +1,17 @@
 # Video Metadata - Problem 0088
 
-## 📺 YouTube (Markdown Supported: Bold, Italic, Links)
+## 📺 YouTube (Plain Text + Links)
 
-**Title:** LeetCode 88: Merge Sorted Array | Two Pointers Solution | C++
+Title: LeetCode 88: Merge Sorted Array | Two Pointers Solution | C++
 
-**Description:**
+Description:
 Merging datasets is a fundamental operation in database joins and mergesort. In this video, we tackle LeetCode 88 (Merge Sorted Array) using an optimized "Reverse Two Pointer" technique that avoids data shifting and extra memory allocation.
 
-**Complexity Analysis**
+Complexity Analysis
 • Time: O(M + N)
 • Space: O(1)
 
-**Resources**
+Resources
 📘 Algorithm Handbook (Full Breakdown):
 https://scriptsledge.github.io/algorithm-handbook/problems/0088/
 

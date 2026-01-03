@@ -57,18 +57,18 @@ SUBMISSION_TEMPLATE = """# 🏷️ LeetCode Submission Title
 
 METADATA_TEMPLATE = """# Video Metadata - Problem {number}
 
-## 📺 YouTube (Markdown Supported: Bold, Italic, Links)
+## 📺 YouTube (Plain Text + Links)
 
-**Title:** LeetCode {number}: {title} | C++ Solution & Analysis
+Title: LeetCode {number}: {title} | C++ Solution & Analysis
 
-**Description:**
+Description:
 <!-- Add concise engineering description -->
 
-**Complexity Analysis**
+Complexity Analysis
 • Time: O(N)
 • Space: O(N)
 
-**Resources**
+Resources
 📘 Algorithm Handbook (Full Breakdown):
 https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
 
