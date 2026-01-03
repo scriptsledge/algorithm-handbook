@@ -28,47 +28,47 @@ int main() {
 """
 
 SUBMISSION_TEMPLATE = """# 🏷️ LeetCode Submission Title
-<!-- C++ | O(N) Solution | Prefix & Suffix Arrays | Clean Code -->
+<!-- C++ | O(N) Solution | Clean & Efficient -->
 
-# 🚀 Intuition
+# Intuition
 <!-- Describe your first thoughts here -->
 
-# 💡 Approach
+# Approach
 <!-- Describe your algorithm here -->
 
-# 🎥 Video Explanation
-[**Watch the quick walkthrough on YouTube**](YOUR_YOUTUBE_LINK_HERE)
+# Video Explanation
+[**Watch the breakdown on YouTube**](YOUR_YOUTUBE_LINK_HERE)
 
-# 💻 Complexity
+# Complexity
 *   **Time complexity:** $$O(N)$$
     <!-- Explanation -->
 *   **Space complexity:** $$O(N)$$
     <!-- Explanation -->
 
-# 👨‍💻 Code
+# Code
 ```cpp
 // Paste your solution class here
 ```
 
 ---
-**Connect & Follow:**
-*   📘 **Algorithm Handbook:** [Full Analysis & Code](https://scriptsledge.github.io/algorithm-handbook/problems/{number}/)
+**Algorithm Handbook:**
+[Full Analysis & Code](https://scriptsledge.github.io/algorithm-handbook/problems/{number}/)
 """
 
 METADATA_TEMPLATE = """# Video Metadata - Problem {number}
 
 ## 📺 YouTube (Markdown Supported: Bold, Italic, Links)
 
-**Title:** LeetCode {number}: {title} | C++ Solution
+**Title:** LeetCode {number}: {title} | C++ Solution & Analysis
 
 **Description:**
 <!-- Add concise engineering description -->
 
-*📊 Complexity Analysis*
-- Time: O(N)
-- Space: O(N)
+**Complexity Analysis**
+• Time: O(N)
+• Space: O(N)
 
-*👇 Resources & Code*
+**Resources**
 📘 Algorithm Handbook (Full Breakdown):
 https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
 
@@ -82,51 +82,53 @@ YOUR_LEETCODE_POST_LINK
 ## 📸 Meta (Facebook/Instagram - Plain Text Only)
 
 **Caption:**
-LeetCode {number}: {title} | C++ Solution 🚀
+LeetCode {number}: {title} | C++ Solution
 
 <!-- Add concise engineering description -->
 
-📊 Complexity Analysis:
-- Time: O(N)
-- Space: O(N)
+The Engineering Approach:
+Instead of a naive check, we optimize for [X] using [Y]. This allows for a scalable O(N) solution while maintaining code clarity.
 
-🔗 Resources & Code:
-Find the full source code and detailed article here:
-https://github.com/scriptsledge/algorithm-handbook/tree/main/src/{number}
+Complexity Analysis:
+• Time: O(N)
+• Space: O(N)
+
+Resources & Code:
+Find the full breakdown here:
+https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
 
 ## 📊 Engagement Poll
 
 **Prompt:** Best strategy to solve this efficiently?
-- **Option 1:** Precomputation (Prefix/Suffix) 🧠
-- **Option 2:** Greedy Traversal (One Pass) ⚡
-- **Option 3:** Brute Force (Correctness Check) 🐢
-- **Option 4:** Analyzing the Solution 📚
+- Option 1: Precomputation (Prefix/Suffix)
+- Option 2: Greedy Traversal (One Pass)
+- Option 3: Sorting & Sweeping
+- Option 4: Analyzing the Solution
 
-#LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #CodingLife #Programming #TechTips
+#LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #Programming #Tech
 
 ---
 
 ## 💼 LinkedIn Post (Plain Text Only - No Markdown)
 
-{{hook_question}} 📉
+{{hook_question}}
 
 {{engineering_context}}
 
-That is the core challenge of LeetCode {number}.
+That is the core challenge of LeetCode {number} ({title}).
 
-🔹 The Goal:
+🔹 The Goal
 {{one_sentence_goal}}
 
-🔹 The Solution:
+🔹 The Solution
 We use a "{{technique_name}}" approach to solve this in {{time_complexity}}.
 
-1. Step 1: {{step_1_description}}
-2. Step 2: {{step_2_description}}
+• Step 1: {{step_1_description}}
+• Step 2: {{step_2_description}}
 
 {{trade_off_explanation}}
 
-Check out the full breakdown and code in the Algorithm Handbook:
-👇
+Full Analysis & Code:
 https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
 
 #Algorithms #SystemsDesign #Cpp #DataStructures #Engineering
@@ -144,13 +146,13 @@ tags:
 <div class="grid cards" markdown>
 
 -   :material-youtube: **Watch the Solution**
-    [Coming Soon](#){{ .md-button }}
+    [Watch Video](#){{ .md-button }}
 
 -   :material-github: **View on GitHub**
     [Source Code](https://github.com/scriptsledge/algorithm-handbook/tree/main/src/{number}){{ .md-button }}
 
 -   :simple-leetcode: **LeetCode Solution**
-    [Solve It](https://leetcode.com/problems/TODO-SLUG/){{ .md-button }}
+    [Read Post](https://leetcode.com/problems/TODO-SLUG/){{ .md-button }}
 
 </div>
 
