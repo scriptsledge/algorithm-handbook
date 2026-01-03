@@ -43,7 +43,7 @@ https://scriptsledge.github.io/algorithm-handbook/problems/0056/
 
 ## 📊 Engagement Poll
 
-**Prompt:** To merge overlapping intervals efficiently, what is the critical first step?
+**Prompt:** Key to efficient interval merging?
 - **Option 1:** Sort by Start Time 🧠
 - **Option 2:** Check every pair (O(N²)) 🐢
 - **Option 3:** Sort by End Time 📉

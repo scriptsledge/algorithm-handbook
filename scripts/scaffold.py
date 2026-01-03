@@ -96,7 +96,7 @@ https://github.com/scriptsledge/algorithm-handbook/tree/main/src/{number}
 
 ## 📊 Engagement Poll
 
-**Prompt:** To break the O(N³) bottleneck while preserving relative order, what was your strategy?
+**Prompt:** Best strategy to solve this efficiently?
 - **Option 1:** Precomputation (Prefix/Suffix) 🧠
 - **Option 2:** Greedy Traversal (One Pass) ⚡
 - **Option 3:** Brute Force (Correctness Check) 🐢
