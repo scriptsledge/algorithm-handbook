@@ -76,6 +76,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '2176. Count Equal and Divisible Pairs in an Array': problems/2176.md
       - '0704. Binary Search': problems/0704.md
       - '0152. Maximum Product Subarray': problems/0152.md
       - '3375. Minimum Operations to Make Array Values Equal to K': problems/3375.md
