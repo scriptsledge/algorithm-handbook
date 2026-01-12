@@ -13,10 +13,10 @@ This handbook serves as a living repository of algorithmic patterns, designed fo
 
 | Problem | Difficulty | Tags |
 | :--- | :---: | :--- |
+| [**0035. Search Insert Position**](problems/0035.md) | Easy | `New` |
 | [**2176. Count Equal and Divisible Pairs in an Array**](problems/2176.md) | Easy | `Array` `Hash Table` |
 | [**0704. Binary Search**](problems/0704.md) | Easy | `Binary Search` `Recursion` |
 | [**0152. Maximum Product Subarray**](problems/0152.md) | Medium | `New` |
 | [**3375. Minimum Operations to Make Array Values Equal to K**](problems/3375.md) | Easy | `Array` `Hash Table` |
-| [**0001. Two Sum**](problems/0001.md) | Easy | `Array` `Hash Table` |
 
 *...view all problems in the navigation menu.*
