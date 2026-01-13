@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/0781/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/rabbits-in-forest/solutions/
+https://leetcode.com/problems/rabbits-in-forest/solutions/7492269/c-on-time-on-space-greedy-math-by-script-96ja
 
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview
 
