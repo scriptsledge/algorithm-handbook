@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/2563/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/count-the-number-of-fair-pairs/solutions/
+https://leetcode.com/problems/count-the-number-of-fair-pairs/solutions/7492064/c-on2-solution-clean-efficient-by-script-k6vh
 
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview
 
