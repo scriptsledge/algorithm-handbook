@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/0169/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/majority-element/
+https://leetcode.com/problems/majority-element/solutions/7495813/c-on-solution-o1-space-boyer-moore-votin-zfw3
 
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview
 
