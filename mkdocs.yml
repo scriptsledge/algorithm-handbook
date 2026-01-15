@@ -76,6 +76,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '0169. Majority Element': problems/0169.md
       - '1399. Count Largest Group': problems/1399.md
       - '0781. Rabbits in Forest': problems/0781.md
       - '2563. Count the Number of Fair Pairs': problems/2563.md
