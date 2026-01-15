@@ -11,6 +11,15 @@ Complexity Analysis
 • Time: O(N log N)
 • Space: O(log N)
 
+Resources
+📘 Algorithm Handbook (Full Breakdown):
+https://scriptsledge.github.io/algorithm-handbook/problems/1399/
+
+💡 Detailed Article (LeetCode):
+https://leetcode.com/problems/count-largest-group/solutions/7495763/c-on-log-n-solution-clean-efficient-by-s-vw5c
+
+#LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview
+
 ---
 
 ## 📸 Meta (Facebook/Instagram - Plain Text Only)
@@ -27,13 +36,27 @@ Complexity Analysis:
 • Time: O(N log N)
 • Space: O(log N)
 
+Resources & Code:
+Find the full breakdown here:
+https://scriptsledge.github.io/algorithm-handbook/problems/1399/
+
+## 📊 Engagement Poll
+
+**Prompt:** Best strategy to solve this efficiently?
+- Option 1: Frequency Map (Hash Table)
+- Option 2: Sorting (O(N log N))
+- Option 3: Brute Force Nested Loops
+- Option 4: Array (Fixed Size)
+
+#LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #Programming #Tech
+
 ---
 
 ## 💼 LinkedIn Post (Plain Text Only - No Markdown)
 
 How do you efficiently group 10,000 numbers based on their digit sums?
 
-In algorithmic challenges, we often need to transform data into buckets to find distribution patterns. For LeetCode 1399, the challenge is identifying which buckets (digit sums) are the largest.
+In data partitioning and sharding strategies, we often group items by a property. For LeetCode 1399, we simulate this by grouping numbers by their digit sum to find the largest clusters.
 
 That is the core challenge of LeetCode 1399 (Count Largest Group).
 
