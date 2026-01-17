@@ -76,6 +76,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '0033. Search in Rotated Sorted Array': problems/0033.md
       - '0169. Majority Element': problems/0169.md
       - '1399. Count Largest Group': problems/1399.md
       - '0781. Rabbits in Forest': problems/0781.md
