@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/0033/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/search-in-rotated-sorted-array/solutions/
+https://leetcode.com/problems/search-in-rotated-sorted-array/solutions/7501681/c-olog-n-solution-modified-binary-search-arn8
 
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #BinarySearch
 
