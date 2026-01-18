@@ -76,6 +76,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '3392. Count Subarrays of Length Three With a Condition': problems/3392.md
       - '0081. Search in Rotated Sorted Array II': problems/0081.md
       - '0033. Search in Rotated Sorted Array': problems/0033.md
       - '0169. Majority Element': problems/0169.md
