@@ -33,5 +33,13 @@ public:
 ```
 
 ---
+
 **Algorithm Handbook:**
+
 [Full Analysis & Code](https://scriptsledge.github.io/algorithm-handbook/problems/3392/)
+
+
+
+**LeetCode Solution:**
+
+[Read the Post](https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/solutions/7504805/c-on-simple-window-check-3392-count-suba-j28v)

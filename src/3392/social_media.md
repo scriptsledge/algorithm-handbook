@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/3392/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/
+https://leetcode.com/problems/count-subarrays-of-length-three-with-a-condition/solutions/7504805/c-on-simple-window-check-3392-count-suba-j28v
 
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview
 
