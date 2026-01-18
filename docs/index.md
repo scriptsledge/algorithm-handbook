@@ -13,10 +13,10 @@ This handbook serves as a living repository of algorithmic patterns, designed fo
 
 | Problem | Difficulty | Tags |
 | :--- | :---: | :--- |
+| [**0081. Search in Rotated Sorted Array II**](problems/0081.md) | Medium | `New` |
 | [**0033. Search in Rotated Sorted Array**](problems/0033.md) | Medium | `New` |
 | [**0169. Majority Element**](problems/0169.md) | Easy | `New` |
 | [**1399. Count Largest Group**](problems/1399.md) | Easy | `New` |
 | [**0781. Rabbits in Forest**](problems/0781.md) | Medium | `New` |
-| [**2563. Count the Number of Fair Pairs**](problems/2563.md) | Medium | `New` |
 
 *...view all problems in the navigation menu.*
