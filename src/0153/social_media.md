@@ -40,15 +40,15 @@ Resources & Code:
 Find the full breakdown here:
 https://scriptsledge.github.io/algorithm-handbook/problems/0153/
 
+#LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #Programming #Tech
+
 ## 📊 Engagement Poll
 
-**Prompt:** What's the best time complexity for finding the minimum in a rotated sorted array of unique elements?
-- Option 1: O(N)
-- Option 2: O(log N)
-- Option 3: O(1)
-- Option 4: O(N log N)
-
-#LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #Programming #Tech
+**Prompt:** Best time complexity for rotated arrays?
+Option 1: O(N)
+Option 2: O(log N)
+Option 3: O(1)
+Option 4: O(N log N)
 
 ---
 

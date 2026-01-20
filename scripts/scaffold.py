@@ -28,8 +28,8 @@ int main() {
 }
 """
 
-SUBMISSION_TEMPLATE = """# 🏷️ LeetCode Submission Title
-<!-- C++ | O(N) Solution | Clean & Efficient -->
+SUBMISSION_TEMPLATE = """# O(N) Solution | Two Pointers | Step-by-Step Explanation
+<!-- Change the title above to: Complexity | Technique | Key Benefit -->
 
 # Intuition
 <!-- Describe your first thoughts here -->
@@ -98,15 +98,15 @@ Resources & Code:
 Find the full breakdown here:
 https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
 
+#LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #Programming #Tech
+
 ## 📊 Engagement Poll
 
-**Prompt:** Best strategy to solve this efficiently?
-- Option 1: Precomputation (Prefix/Suffix)
-- Option 2: Greedy Traversal (One Pass)
-- Option 3: Sorting & Sweeping
-- Option 4: Analyzing the Solution
-
-#LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #Programming #Tech
+**Prompt:** Best strategy for this problem? (Max 60 chars)
+Option 1: Precomputation
+Option 2: Two Pointers
+Option 3: Sorting
+Option 4: Hash Map
 
 ---
 

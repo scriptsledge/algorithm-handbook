@@ -1,5 +1,4 @@
-# 🏷️ 0153. Find Minimum in Rotated Sorted Array
-<!-- C++ | O(log N) Solution | Binary Search -->
+# C++ | O(log N) | Binary Search | Step-by-Step Visualization
 
 # Intuition
 The array is sorted but rotated, which means it consists of two sorted subarrays. The minimum element is the pivot point where the rotation happened. Since it's derived from a sorted array, we can use Binary Search to find this element in logarithmic time.

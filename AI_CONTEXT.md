@@ -23,7 +23,7 @@
 3.  **Content Standards & Formatting:**
 
     *   **LeetCode Discussion (`discussion_post.md`):**
-        *   Include `# 🏷️ LeetCode Submission Title` at the top.
+        *   **Title:** Catchy, professional, technique-focused (e.g., `O(log N) Binary Search | Visualized`). Avoid redundant "Problem Name" titles.
         *   Do **not** link to the LeetCode post inside the body (circular dependency).
 
     *   **LinkedIn (`social_media.md`):**
@@ -36,8 +36,12 @@
             5.  **Trade-off:** "We trade [Resource A] for [Resource B]."
 
     *   **Meta/Reels (`social_media.md`):**
-        *   Include an **Engagement Poll** focused on engineering strategy.
-        *   Plain Text Only.
+        *   **Format:** Plain Text Only (No Markdown).
+        *   **Tags:** Must appear **before** the Engagement Poll (so captions are copy-paste ready).
+        *   **Engagement Poll:**
+            *   **Question:** MUST be under **60 characters**.
+            *   **Options:** Simple text only (No Markdown like `**` or `[ ]`).
+            *   **Focus:** Engineering strategy.
 
     *   **YouTube (`social_media.md`):**
         *   Markdown is allowed (Bold, Italic, Links).
