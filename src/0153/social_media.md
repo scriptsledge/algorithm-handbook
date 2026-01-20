@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/0153/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/solutions/7509897/c-olog-n-solution-binary-search-0153-fin-3a9w/
 
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #BinarySearch
 
