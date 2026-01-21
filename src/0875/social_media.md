@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/0875/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/koko-eating-bananas/solutions/
+https://leetcode.com/problems/koko-eating-bananas/solutions/7511694/on-log-m-binary-search-answer-space-over-8mjg
 
 #LeetCode #Algorithms #BinarySearch #Cpp #SoftwareEngineering #CodingInterview
 
