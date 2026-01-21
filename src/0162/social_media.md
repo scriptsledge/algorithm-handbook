@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/0162/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/find-peak-element/solutions/
+https://leetcode.com/problems/find-peak-element/solutions/7511616/olog-n-binary-search-slope-analysis-visu-hiv5
 
 #LeetCode #Algorithms #BinarySearch #Cpp #SoftwareEngineering #CodingInterview
 
