@@ -14,7 +14,7 @@ The problem asks for the minimum eating speed $k$. The time required to eat all 
 3. Return `low`.
 
 # Video Explanation
-[**Watch the breakdown on YouTube**](https://youtube.com/shorts/LPvoHA3PAFA)
+[**Watch the breakdown on YouTube**](https://youtube.com/shorts/Aejd-PzcCLs)
 
 # Complexity
 *   **Time complexity:** $O(N \log M)$ where $M$ is the max pile size.
