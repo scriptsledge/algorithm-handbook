@@ -76,6 +76,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '1482. Minimum Number of Days to Make m Bouquets': problems/1482.md
       - '0875. Koko Eating Bananas': problems/0875.md
       - '0069. Sqrt(x)': problems/0069.md
       - '0162. Find Peak Element': problems/0162.md
