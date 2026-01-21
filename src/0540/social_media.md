@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/0540/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/single-element-in-a-sorted-array/solutions/
+https://leetcode.com/problems/single-element-in-a-sorted-array/solutions/7511594/olog-n-binary-search-even-index-pattern-4c8r5
 
 #LeetCode #Algorithms #BinarySearch #Cpp #SoftwareEngineering #CodingInterview
 
