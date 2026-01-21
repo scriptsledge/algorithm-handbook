@@ -76,6 +76,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '0069. Sqrt(x)': problems/0069.md
       - '0162. Find Peak Element': problems/0162.md
       - '0540. Single Element in a Sorted Array': problems/0540.md
       - '1295. Find Numbers with Even Number of Digits': problems/1295.md
