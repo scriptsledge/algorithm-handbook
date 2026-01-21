@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/0069/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/sqrtx/solutions/
+https://leetcode.com/problems/sqrtx/solutions/7511649/olog-x-binary-search-prevent-overflow-co-lvb7
 
 #LeetCode #Algorithms #BinarySearch #Cpp #SoftwareEngineering #CodingInterview
 
