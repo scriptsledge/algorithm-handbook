@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/1295/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/find-numbers-with-even-number-of-digits/solutions/
+https://leetcode.com/problems/find-numbers-with-even-number-of-digits/solutions/7511543/on-range-based-solution-clean-efficient-u0bdf
 
 #LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview
 
