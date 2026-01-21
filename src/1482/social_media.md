@@ -16,7 +16,7 @@ Resources
 https://scriptsledge.github.io/algorithm-handbook/problems/1482/
 
 💡 Detailed Article (LeetCode):
-https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/solutions/
+https://leetcode.com/problems/minimum-number-of-days-to-make-m-bouquets/solutions/7511740/on-log-d-binary-search-answer-space-clea-e3a6
 
 #LeetCode #Algorithms #BinarySearch #Cpp #SoftwareEngineering #CodingInterview
 
