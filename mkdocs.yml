@@ -76,6 +76,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '1295. Find Numbers with Even Number of Digits': problems/1295.md
       - '0153. Find Minimum in Rotated Sorted Array': problems/0153.md
       - '3392. Count Subarrays of Length Three With a Condition': problems/3392.md
       - '0081. Search in Rotated Sorted Array II': problems/0081.md
