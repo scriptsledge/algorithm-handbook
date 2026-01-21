@@ -76,6 +76,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '0875. Koko Eating Bananas': problems/0875.md
       - '0069. Sqrt(x)': problems/0069.md
       - '0162. Find Peak Element': problems/0162.md
       - '0540. Single Element in a Sorted Array': problems/0540.md
