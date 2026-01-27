@@ -13,10 +13,10 @@ This handbook serves as a living repository of algorithmic patterns, designed fo
 
 | Problem | Difficulty | Tags |
 | :--- | :---: | :--- |
+| [**1283. Find the Smallest Divisor Given a Threshold**](problems/1283.md) | Medium | `New` |
 | [**1482. Minimum Number of Days to Make m Bouquets**](problems/1482.md) | Medium | `New` |
 | [**0875. Koko Eating Bananas**](problems/0875.md) | Medium | `New` |
 | [**0069. Sqrt(x)**](problems/0069.md) | Medium | `New` |
 | [**0162. Find Peak Element**](problems/0162.md) | Medium | `New` |
-| [**0540. Single Element in a Sorted Array**](problems/0540.md) | Medium | `New` |
 
 *...view all problems in the navigation menu.*
