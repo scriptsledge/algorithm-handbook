@@ -76,6 +76,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '0075. Sort Colors': problems/0075.md
       - '1283. Find the Smallest Divisor Given a Threshold': problems/1283.md
       - '1482. Minimum Number of Days to Make m Bouquets': problems/1482.md
       - '0875. Koko Eating Bananas': problems/0875.md
