@@ -24,3 +24,6 @@ Thumbs.db
 env/
 venv/
 .env
+
+# Gemini
+.gemini/
