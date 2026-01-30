@@ -13,10 +13,10 @@ This handbook serves as a living repository of algorithmic patterns, designed fo
 
 | Problem | Difficulty | Tags |
 | :--- | :---: | :--- |
+| [**1539. Kth Missing Positive Number**](problems/1539.md) | Easy | `New` |
 | [**1011. Capacity To Ship Packages Within D Days**](problems/1011.md) | Medium | `New` |
 | [**0075. Sort Colors**](problems/0075.md) | Medium | `New` |
 | [**1283. Find the Smallest Divisor Given a Threshold**](problems/1283.md) | Medium | `New` |
 | [**1482. Minimum Number of Days to Make m Bouquets**](problems/1482.md) | Medium | `New` |
-| [**0875. Koko Eating Bananas**](problems/0875.md) | Medium | `New` |
 
 *...view all problems in the navigation menu.*
