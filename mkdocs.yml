@@ -76,6 +76,7 @@ extra_css:
 nav:
   - Home: index.md
   - Problems:
+      - '3442. Maximum Difference Between Even and Odd Frequency I': problems/3442.md
       - '1539. Kth Missing Positive Number': problems/1539.md
       - '1011. Capacity To Ship Packages Within D Days': problems/1011.md
       - '0075. Sort Colors': problems/0075.md

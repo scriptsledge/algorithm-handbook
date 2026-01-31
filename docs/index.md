@@ -13,10 +13,10 @@ This handbook serves as a living repository of algorithmic patterns, designed fo
 
 | Problem | Difficulty | Tags |
 | :--- | :---: | :--- |
+| [**3442. Maximum Difference Between Even and Odd Frequency I**](problems/3442.md) | Easy | `New` |
 | [**1539. Kth Missing Positive Number**](problems/1539.md) | Easy | `New` |
 | [**1011. Capacity To Ship Packages Within D Days**](problems/1011.md) | Medium | `New` |
 | [**0075. Sort Colors**](problems/0075.md) | Medium | `New` |
 | [**1283. Find the Smallest Divisor Given a Threshold**](problems/1283.md) | Medium | `New` |
-| [**1482. Minimum Number of Days to Make m Bouquets**](problems/1482.md) | Medium | `New` |
 
 *...view all problems in the navigation menu.*
