@@ -60,7 +60,7 @@ METADATA_TEMPLATE = """# Video Metadata - Problem {number}
 
 ## 📺 YouTube (Plain Text + Links)
 
-Title: LeetCode {number}: {title} | C++ Solution & Analysis
+Title: LeetCode {number}: {title} | C++ Solution
 
 Description:
 <!-- Add concise engineering description -->
