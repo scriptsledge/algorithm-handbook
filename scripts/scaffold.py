@@ -32,18 +32,23 @@ SUBMISSION_TEMPLATE = """# O(N) Solution | Two Pointers | Step-by-Step Explanati
 <!-- Change the title above to: Complexity | Technique | Key Benefit -->
 
 # Intuition
-<!-- Describe your first thoughts here -->
+<!-- When we are given [input], we cannot [constraint]. So the key challenge is to [goal].
+A straightforward idea would be to [naive approach]. However, this requires [drawback].
+To optimize this, we can observe that [key insight]. This insight allows us to [benefit]. -->
 
 # Approach
-<!-- Describe your algorithm here -->
+<!-- 1. Initialize [variables].
+2. [Step 1].
+3. [Step 2].
+4. [Conclusion/Return]. -->
 
 # Video Explanation
 [**Watch the breakdown on YouTube**](YOUR_YOUTUBE_LINK_HERE)
 
 # Complexity
-*   **Time complexity:** $$O(N)$$
+*   **Time complexity:** $O(N)$
     <!-- Explanation -->
-*   **Space complexity:** $$O(N)$$
+*   **Space complexity:** $O(1)$
     <!-- Explanation -->
 
 # Code
@@ -58,59 +63,24 @@ SUBMISSION_TEMPLATE = """# O(N) Solution | Two Pointers | Step-by-Step Explanati
 
 METADATA_TEMPLATE = """# Video Metadata - Problem {number}
 
-## 📺 YouTube (Plain Text + Links)
+## 📺 YouTube (Shorts & Long-form)
 
 Title: LeetCode {number}: {title} | C++ Solution
 
 Description:
-<!-- Add concise engineering description -->
+Find the middle of a linked list in one pass! {title} explained using the Two Pointers (Tortoise & Hare) technique.
 
-Complexity Analysis
-• Time: O(N)
-• Space: O(N)
+📘 Full Breakdown: https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
+💡 LeetCode Solution: YOUR_LEETCODE_POST_LINK
 
-Resources
-📘 Algorithm Handbook (Full Breakdown):
-https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
+#LeetCode #Algorithms #Cpp #CodingInterview #Shorts
 
-💡 Detailed Article (LeetCode):
-YOUR_LEETCODE_POST_LINK
-
-#LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview
+Tags:
+LeetCode {number}, {title}, {number} LeetCode, {title} Solution, LeetCode {title}, C++, Algorithms, Data Structures, Coding Interview, Software Engineering, {number} Solution, {number} Analysis
 
 ---
 
-## 📸 Meta (Facebook/Instagram - Plain Text Only)
-
-**Caption:**
-LeetCode {number}: {title} | C++ Solution
-
-<!-- Add concise engineering description -->
-
-The Engineering Approach:
-Instead of a naive check, we optimize for [X] using [Y]. This allows for a scalable O(N) solution while maintaining code clarity.
-
-Complexity Analysis:
-• Time: O(N)
-• Space: O(N)
-
-Resources & Code:
-Find the full breakdown here:
-https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
-
-#LeetCode #Algorithms #Cpp #DataStructures #SoftwareEngineering #CodingInterview #Programming #Tech
-
-## 📊 Engagement Poll
-
-**Prompt:** Best strategy for this problem? (Max 60 chars)
-Option 1: Precomputation
-Option 2: Two Pointers
-Option 3: Sorting
-Option 4: Hash Map
-
----
-
-## 💼 LinkedIn Post (Plain Text Only - No Markdown)
+## 💼 LinkedIn Post (Professional & Clean)
 
 {{hook_question}}
 
@@ -118,21 +88,44 @@ Option 4: Hash Map
 
 That is the core challenge of LeetCode {number} ({title}).
 
-🔹 The Goal
-{{one_sentence_goal}}
-
-🔹 The Solution
-We use a "{{technique_name}}" approach to solve this in {{time_complexity}}.
+🔹 The Goal: {{one_sentence_goal}}
+🔹 The Solution: We use a "{{technique_name}}" approach to solve this in {{time_complexity}}.
 
 • Step 1: {{step_1_description}}
 • Step 2: {{step_2_description}}
 
 {{trade_off_explanation}}
 
-Full Analysis & Code:
-https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
+Full Analysis & Code: https://scriptsledge.github.io/algorithm-handbook/problems/{number}/
 
-#Algorithms #SystemsDesign #Cpp #DataStructures #Engineering
+#LeetCode #SoftwareEngineering #DataStructures #Algorithms #Cpp
+
+---
+
+## 📸 Meta (Instagram & Facebook - Aesthetic)
+
+LeetCode {number}: {title} 🚀
+
+Optimizing for [X] using [Y] for a scalable O(N) solution. Clean, efficient, and interview-ready.
+
+Complexity:
+• Time: O(N)
+• Space: O(1)
+
+🔗 Full Breakdown in Bio!
+
+.
+.
+.
+#LeetCode #Algorithms #CodingInterview #SoftwareEngineering #DataStructures #Programming #Tech #Cpp #CodingLife
+
+## 📊 Engagement Poll
+
+**Prompt:** Best strategy for this problem?
+Option 1: Two Pointers
+Option 2: Hash Map
+Option 3: Sorting
+Option 4: Precomputation
 """
 
 DOCS_TEMPLATE = """---
@@ -170,11 +163,24 @@ tags:
 
 ## 🧠 Intuition
 
-<!-- Add intuition here -->
+<!-- When we are given [input], we cannot [constraint]. So the key challenge is to [goal].
+A straightforward idea would be to [naive approach]. However, this requires [drawback].
+To optimize this, we can observe that [key insight]. This insight allows us to [benefit]. -->
 
 ## 💡 Approach
 
-<!-- Add approach here -->
+<!-- 1. Initialize [variables].
+2. [Step 1].
+3. [Step 2].
+4. [Conclusion/Return]. -->
+
+## 📊 Complexity Analysis
+
+*   **Time Complexity:** $O(N)$
+    <!-- Explanation -->
+
+*   **Space Complexity:** $O(1)$
+    <!-- Explanation -->
 
 ## 💻 Code
 
@@ -183,14 +189,6 @@ tags:
     ```cpp
     --8<-- "src/{number}/solution.cpp"
     ```
-
-## 📊 Complexity Analysis
-
-*   **Time Complexity:** $O(N)$
-    <!-- Explanation -->
-
-*   **Space Complexity:** $O(N)$
-    <!-- Explanation -->
 """
 
 README_TEMPLATE = """# {number}. {title}
